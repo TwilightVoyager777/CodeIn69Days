@@ -1,9 +1,8 @@
-package leetcode.editor.en;
+package leetcode.editor.en.TwoPointersLinkedList0202;
 
-import java.util.*;
 import leetcode.editor.common.*;
 
-public class MergeTwoSortedLists {
+public class MiddleOfTheLinkedList {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     /**
@@ -17,15 +16,20 @@ public class MergeTwoSortedLists {
      * }
      */
     class Solution {
-        public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-            
+        public ListNode middleNode(ListNode head) {
+            ListNode slow = head, fast = head;
+            while (fast != null && fast.next != null) {
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+            return slow;
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
 
     
     public static void main(String[] args) {
-        Solution solution = new MergeTwoSortedLists().new Solution();
+        Solution solution = new MiddleOfTheLinkedList().new Solution();
         // put your test code here
         
     }
