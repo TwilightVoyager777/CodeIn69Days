@@ -1,4 +1,4 @@
-package leetcode.editor.en.TwoPointersLinkedList0202;
+package leetcode.editor.en.Day1TwoPointersLinkedList;
 
 import java.util.*;
 import leetcode.editor.common.*;
