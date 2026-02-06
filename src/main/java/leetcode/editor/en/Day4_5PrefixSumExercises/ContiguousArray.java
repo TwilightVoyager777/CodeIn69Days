@@ -1,7 +1,6 @@
-package leetcode.editor.en;
+package leetcode.editor.en.Day4_5PrefixSumExercises;
 
 import java.util.*;
-import leetcode.editor.common.*;
 
 public class ContiguousArray {
 
